@@ -56,7 +56,7 @@ function tutu(x, ...rest) {
 
 ## Author
 
-aluxxxx (Nombre apellidos) - [GitHub Profile](https://github.com/jncabdom)
+aluxxxx (Nombre apellidos) - [GitHub Profile](https://github.com/aluxxxx)
 
 ## Tests
 
