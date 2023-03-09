@@ -25,7 +25,7 @@ console.log("Code without spread operators: \n", spread(example_code));
 An input file must be specified. You also may or may not specify an output file. If not given, it will default to "output.js".
 
 ```
-npx spread input_file --o output_file
+spread input_file --o output_file
 ```
 
 ## Examples
