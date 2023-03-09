@@ -34,7 +34,11 @@ spread input_file --o output_file
 function restFun(...things) {
   return things[2];
 }
-// TRANSLATES INTO:
+```
+
+Translates into:
+
+```js
 function restFun() {
   var things = Array.prototype.slice.call(arguments, 0);
   return things[2];
