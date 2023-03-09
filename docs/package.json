@@ -1,0 +1,12 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "--- descripcion: https://ull-esit-gradoii-pl.github.io/practicas/ast-types.html alumno: \"Nombre apellidos (aluxxxx)\" ---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nombre apellidos <aluXXXX@ull.edu.es> (https://github.com/jncabdom)",
+  "license": "ISC"
+}

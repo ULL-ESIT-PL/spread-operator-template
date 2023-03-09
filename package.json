@@ -1,0 +1,56 @@
+{
+  "name": "@ull-esit-pl-2223/ast-types-nombre-apellido-aluxxxx",
+  "version": "1.1.0",
+  "description": "A simple utility. Translates ES6 spread operator to ES5",
+  "main": "spread.js",
+  "bin": {
+    "spread": "bin/spread-cli.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "test": "mocha",
+    "cov": "c8 npm run test",
+    "full-cov": "npm run clean && npm i && npm run cov",
+    "clean": "rm -rf node_modules package-lock.json",
+    "jsdoc": "jsdoc src -d docs/jsdoc --readme README.md",
+    "genCov": "c8 --reporter=html --reporter=text npm run test && rm -rf docs/coverage && mv coverage docs/",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs && rm -rf docs/assets && mv docs/.vuepress/dist/* docs && rm -rf docs/.vuepress/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-PL-2122/ast-types-nombre-apellido-aluxxxx.git"
+  },
+  "keywords": [
+    "ULL",
+    "AST",
+    "compilers",
+    "spread"
+  ],
+  "author": "Nombre apellidos <aluXXXX@ull.edu.es> (https://github.com/jncabdom)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-PL-2122/ast-types-nombre-apellido-aluxxxx/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-PL-2122/ast-types-nombre-apellido-aluxxxx#readme",
+  "devDependencies": {
+    "c8": "^7.11.0",
+    "chai": "^4.3.6",
+    "jsdoc": "^3.6.10",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0",
+    "vuepress": "^1.9.7"
+  },
+  "dependencies": {
+    "ast-types": "^0.14.2",
+    "commander": "^10.0.0",
+    "espree": "^9.3.1",
+    "recast": "^0.20.5"
+  }
+}
