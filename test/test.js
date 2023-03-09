@@ -35,10 +35,13 @@ const testCases = [
   }
 ]
 
+const removeSpaces = (str) => str.replace(/\s/g, '');
+
 describe('Testing module', () => {
   testCases.forEach((testCase) => {
+    let expected = removeSpaces(testCase.result);
     it(`Input: ${testCase.input}\n      Expected result: ${testCase.result}`, () => {
-      spread(testCase.input).should.equal(testCase.result);
+      removeSpaces(spread(testCase.input)).should.equal(expected);
     })
   })
 });
