@@ -7,7 +7,7 @@ Small utility, translates spread operator to ES5 alternatives.
 ## Installation
 
 ```
-npm install git@github.com:ULL-ESIT-PL-2122/ast-types-nombre-apellido-aluxxxx.git
+npm install git@github.com:ULL-ESIT-PL-2223/ast-types-nombre-apellido-aluxxxx.git
 ```
 
 ## Usage from code:
